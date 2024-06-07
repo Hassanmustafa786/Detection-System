@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" class="logout-btn">Home</a></li>
+            <li><a href="/login" class="logout-btn">Login</a></li>
+            <li><a href="/register" class="logout-btn">Sign up</a></li>
+            <li><a href="/#about" class="logout-btn">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="success-message">
+            <p>File uploaded successfully</p>
+            <p>File Name: {{name}}</p>
+        </div>
+
+        <div class="audio-player">
+            <audio controls>
+                <source src="{{ url_for('static', filename='uploads/' + name) }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div>
+            <form action="/upload" method="get">
+                <button class="upload-button">Reset</button>
+            </form>
+        </div>
+
+        <div class="language-info">
+            <p>Detected Language: {{language}}</p>
+        </div>
+
+        <div class="transcribed-text">
+            <h1>Transcribed Text:</h1>
+            <p>{{text}}</p>
+        </div>
+
+        <div class="diarized-text">
+            <h1>Diarized Text:</h1>
+            <ul>
+                {% for line in diarized_text.split('-') %}
+                    <li>{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="classified-text">
+            <h1>Classified Text:</h1>
+            <ul>
+                {% for line in output.split('-') %}
+                    <li>{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="transcribed-text">
+            <h1>Translated Text:</h1>
+            <p>{{translated}}</p>
+        </div>
+    </div>
+    
+</body>
+</html>

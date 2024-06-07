@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Home</title>
+    <style>
+        .content {
+            margin: 0;
+            padding: 0;
+            background-image: url('static/6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+        }
+        .not-logged {
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+            margin-right: 40%;
+            margin-left: 40%;
+            max-width: 100%; /* Adjust as needed */
+            text-align: center;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            z-index: 1; /* Place the nav bar above other content */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: gold; /* Adjust the hover color */
+        }
+        .content {
+            padding-top: 100px; /* Adjust the top padding to accommodate the nav bar */
+            text-align: center;
+        }
+        /* Styling for the about section */
+        .about-section {
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+            background-image: url('static/3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .logout-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: gold;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .logout-btn:hover {
+            background-color: darkgoldenrod; /* Adjust the hover color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/" class="logout-btn">Home</a></li>
+            <li><a href="/login" class="logout-btn">Login</a></li>
+            <li><a href="/register" class="logout-btn">Sign up</a></li>
+            <li><button class="logout-btn" onclick="scrollToAbout()">About</button></li>
+
+            {% if current_user.is_authenticated %}
+                <li><a href="/logout" class="logout-btn">Logout</a></li>
+                <li><a href="/upload" class="logout-btn">Upload</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <section class="landing-section">
+        <div class="content">
+            {% if current_user.is_authenticated %}
+                <div class="not-logged">
+                    <h1>You are logged in</h1>
+                </div>
+                
+            {% else %}
+                <div class="not-logged">
+                    <h1>You are not logged in</h1>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div>
+            <h2>About Us</h2>
+            <p>This is the about section of our website. You can provide information about your organization, team, or project here.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non risus non metus lacinia suscipit vel vitae urna. 
+                Pellentesque consequat feugiat sapien, non viverra nulla rhoncus non. Sed pulvinar, lorem nec dapibus placerat, erat tellus vehicula urna, nec pharetra turpis lorem nec elit. 
+                Curabitur aliquet libero nec lectus dictum fringilla. Nulla consequat eros eu augue consectetur feugiat. 
+                Sed auctor, eros id convallis fermentum, tortor nisl lacinia dui, sit amet laoreet ex sapien sed magna. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque malesuada dapibus metus, in congue ligula vehicula nec. 
+                Nullam varius sollicitudin felis ac elementum. Aliquam dapibus felis eu tortor congue dapibus. 
+                Cras rhoncus quam et ultricies pellentesque. Nullam suscipit odio sit amet mi vehicula, ut fermentum quam vestibulum. 
+                Curabitur ac nisl a lorem consectetur fermentum eget ut nisi.
+            </p>
+            <!-- Add more content about your organization, team, or project as needed -->
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .landing-section, .about-section {
+            padding: 50px;
+            text-align: center;
+        }
+        .about-section {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="scrollToAbout()">About</button>
+    </div>
+
+    <section class="landing-section">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>This is a simple landing page.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>We are a team dedicated to creating awesome web experiences.</p>
+    </section>
+
+    <script>
+        function scrollToAbout() {
+            var aboutSection = document.getElementById('about');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

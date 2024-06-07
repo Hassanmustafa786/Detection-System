@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('../static/loginnnnn.png');
+            opacity: 0.6;
+            background-size: cover;
+        }
+        .container1 {
+            max-width: 400px;
+            display: flex;
+            /* margin: 100px auto; */
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            /* background-color: #2c2828; */
+            padding: 10px;
+            border-radius: 8px;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+        }
+        h1 {
+            text-align: center;
+            color: gold;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: white;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            padding: 10px;
+            color: white;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: None;
+            outline: none;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: gold;
+            outline: none;
+        }
+        button {
+            padding: 12px;
+            background-color: gold;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 105%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            /* background-color: #202220; */
+            opacity: 0.7;
+            color: black;
+        }
+        .login {
+            padding: 12px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid gold;
+            border-radius: 5px;
+            width: 105%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" class="logout-btn">Home</a></li>
+            <li><a href="/login" class="logout-btn">Login</a></li>
+            <li><a href="/register" class="logout-btn">Sign up</a></li>
+            <li><a href="/#about" class="logout-btn">About</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container1">
+        <h1>Sign Up</h1>
+        <form action="{{ url_for('register') }}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" required>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="error-message">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <!-- <form action="{{ url_for('login') }}" method="GET">
+            <button type="submit" class="login">Login</button>
+        </form> -->
+    </div>
+</body>
+</html>

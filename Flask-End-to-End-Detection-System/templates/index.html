@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <style>
+        section {
+            background-image: url('../static//login\ pic.png');
+            height: 800px;
+            background-size: cover;
+        }
+        h1 {
+            color: white;
+        }
+        .container2 {
+            max-width: 400px;
+            /* display: flex; */
+            /* margin: 100px auto; */
+            flex-direction: column;
+            justify-content: center;
+            /* background-color: #2c2828; */
+            padding: 10px;
+            border-radius: 8px;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="/" class="logout-btn">Home</a></li>
+                <li><a href="/login" class="logout-btn">Login</a></li>
+                <li><a href="/register" class="logout-btn">Sign up</a></li>
+                <li><a href="/#about" class="logout-btn" >About</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container2">
+            <h1>Upload a File</h1>
+            <form action="/success" method="post" enctype="multipart/form-data" class="upload-forms"
+                onsubmit="showUploadMessage()">
+                <label for="file-upload" class="custom-file-upload">
+                    <input type="file" id="file-upload" name="file">
+                    Choose File
+                </label>
+                <input type="submit" value="Upload" class="upload-button">
+            </form>
+            <div id="upload-message" class="error-message" style="display: none;">File uploaded successfully!</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

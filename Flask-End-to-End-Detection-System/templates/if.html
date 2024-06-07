@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection System</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="../static/styles.css">
+    <style>
+        .container {
+            max-width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            background-color: #2B4C65;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            position: relative;
+            right: 0.8rem;
+            /* Adjust width as needed */
+        }
+
+        /* Style the play/pause button */
+        .audio-container .play-btn {
+            background-color: #CDDCE8;
+            color: #2B4C65;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .audio-container .play-btn:hover {
+            background-color: #C5D2DB;
+        }
+
+        /* Style the progress bar */
+        .audio-container .progress-bar {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .audio-container .progress-bar input[type="range"] {
+            width: 100%;
+            height: 4px;
+            background: #CDDCE8;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .audio-container .progress-bar input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #CDDCE8;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Style the volume control */
+        .audio-container .volume-control {
+            margin-left: 10px;
+        }
+
+        .audio-container .volume-control input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 60px;
+            height: 4px;
+            background: #CDDCE8;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .audio-container .volume-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #CDDCE8;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .success-message {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .success-message>p {
+            font-weight: 200;
+            font-size: 15px;
+        }
+        .diarized-text>ul>li{
+            color: green;
+        }
+        .classified-text>ul>li{
+            color: red;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" class="logout-btn">Home</a></li>
+            <li><a href="/login" class="logout-btn">Login</a></li>
+            <li><a href="/register" class="logout-btn">Sign up</a></li>
+            <li><a href="/#about" class="logout-btn">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <!-- <div class="audio-player">
+            <audio controls>
+                <source src="{{ url_for('static', filename='uploads/' + name) }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div> -->
+
+        <div class="audio-container">
+            <div class="success-message">
+                <!-- <p>File uploaded successfully</p> -->
+                <p>File Name: <span>{{name}}</span> </p>
+            </div>
+            <audio controls>
+                <source src="{{ url_for('static', filename='uploads/' + name) }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div>
+            <form action="/upload" method="get">
+                <button class="upload-button">Reset</button>
+            </form>
+        </div>
+
+        <div class="language-info">
+            <p>Detected Language: {{language}}</p>
+        </div>
+
+        <div class="transcribed-text">
+            <h1>Transcribed Text:</h1>
+            <p>{{text}}</p>
+        </div>
+
+        <div class="diarized-text">
+            <h1>Diarized Text:</h1>
+            <ul>
+                {% for line in diarized_text.splitlines() %}
+                <li>{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="classified-text">
+            <h1>Classified Text:</h1>
+            <ul>
+                <span>{% for line in output.split('-') %}</span>
+                <li>{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
