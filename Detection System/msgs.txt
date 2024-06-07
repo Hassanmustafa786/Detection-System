@@ -1,0 +1,53 @@
+Hello, this is Hassan from Indenta Technologies. As you already know that I'm an AI developer overthere so here I want to talk to you on the behalf myself not on the behalf of my company because I wanted to let you know that I am offering AI services and other related services so if you are interested in less price. Please let me know, we will discuss it further. You can contact me on this email: hassanqureshi700@gmail.com
+Good luck 
+Thank you
+
+--------------------------------------------
+Hello,
+
+My name is Hassan Mustafa, an accomplished AI Engineer with a 5-year career in developing groundbreaking AI products. Having recently come across your esteemed projects, I am compelled to express my enthusiasm and offer my expertise.
+
+With a demonstrated history of delivering exceptional results, I am confident in my ability to not only meet but exceed your expectations. I am eager to discuss how we can strategically collaborate to achieve unparalleled success for your projects.
+
+Looking forward to the prospect of working together.
+
+Best regards,
+Hassan Mustafa
+
+------------------------------------------------------------
+Below is an example i want you to emulate
+
+Example 1:
+
+Conversation text:
+'Hello, this is Hassan from Indenta Technologies. As you already know that I'm an AI developer overthere so here I want to talk to you on the behalf myself not on the behalf of my company because I wanted to let you know that I am offering AI services and other related services so if you are interested in less price. Please let me know, we will discuss it further. You can contact me on this email: hassanqureshi700@gmail.com
+Good luck 
+Thank you'
+
+Your response: 'Hassan is trying to offer the services to the client on the behalf of himself, he is also sharing his personal details which is unprofessional, and against the conducts of the company'
+
+-------------------------------------------------------------
+Example 2:
+Agent:
+Hello, this is Hassan from Indenta Technologies. As you already know that I'm an AI developer over there.
+
+Client: Hello Hassan, How are you?
+
+Agent:
+So here I want to talk to you on the behalf myself not on the behalf of my company because I wanted to let you know that I am offering AI services and other related services.
+
+Client: Great! So what are the services you are going to offer?
+
+Agent:
+So if you are interested in less price, please let me know, we will discuss it further. You can contact me on this email: hassanqureshi700@gmail.com & Phone: +923242752053
+
+Client: Sure! If the price is reasonable then I'll give you an order rather than to your company because they are charging too much.
+
+Agent:
+Good luck and thank you
+
+Client: Thank you, bye bye!
+
+Your response:
+Hassan is attempting to offer services directly to the client on his behalf, which is unprofessional. Additionally, he has shared personal contact details, such as the email: hassanqureshi700@gmail.com & Phone: +923242752053, violating company conduct.
+

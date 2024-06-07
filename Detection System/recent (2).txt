@@ -1,0 +1,133 @@
+
+Agent: 	Hi, Sir! How are you?
+Client: Hello! May I know who's speaking?
+
+Agent: 	I'm speaking from the youth bank. Just wanted to tell you that recently we have started a credit card scheme. let me know if you need one.
+Client: Yes, I'm interested in Debit card. Please share the details in Urdu.
+
+Agent: 	Hmare Debit card baakio ki nisbat boht sastey hai or hm 30 days money back guarantee bhi dete hai.
+Client: Acha! Toh phr debit card lene ka kia process hai?
+
+Agent: 	Aapke pas 2 option hai yaa toh officially bank ki website pr form fill krke debit card ke liye apply kr skte hai lekin uske zyada charges or agr directly mujhse lenge to phr aapko sasta parega.
+Client: Acha to phr aapse lene ke liye mujhe kia krna hoga?
+
+Agent: 	Aap apni details mujhe nmbr pr send krdein.
+Client: Chalein thik hai mai details aapko WhatsApp pr send krdeta hu.
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Client: Hello, good morning.
+Agent: Good morning! Welcome to Habibi Bank. How can I help you today?
+
+Client: I'm interested in opening a new bank account.
+Agent: 	Excellent! We offer a variety of accounts to suit different needs. Would you like a checking account, a savings account, or 	perhaps both?
+
+Client: I think I might need both. I use a debit card for most things, but I'd also like to start saving some money.
+Agent: 	Great! For your everyday spending, our Advantage Checking offers check writing, mobile banking, and a free debit card. We also 	have a high-yield savings account that earns interest on your deposits.
+
+Client: That sounds good. What are the minimum balances for each account?
+Agent: 	The Advantage Checking requires a $250 minimum daily balance to avoid monthly fees. The high-yield savings has a minimum opening 	deposit of $500.
+
+Client: Okay, that's manageable. Is there anything else I need to bring to open these accounts?
+Agent: You'll need two forms of valid ID, such as your driver's license and social security card.
+
+Client: I have those with me.
+Agent: Perfect. Then let's get you started. Do you have a preference for paper or digital statements?
+
+Client: I'd prefer digital statements to save on paper.
+Agent: Noted. Now, to ensure the security of your accounts, would you like to set up a PIN for your debit card and online banking access?
+
+Client: Yes, please.
+Agent: Okay! Wait a second please.
+
+Client: All done?
+Agent: All done! Here are your new account documents and debit card. There are some additional resources on online banking and mobile banking features if you'd like to take a look.
+
+Client: جزاک اللہ
+Agent: خوش آمدید، سارہ۔ میں آپ کی مدد کرنے کے لئے خوش ہوں۔ آپ کو اگر مستقبل میں کچھ بھی چاہیے ہو تو میں آپ کی خدمت میں ہوں۔ اچھا دن گزاریں۔
+
+Client: آپ بھی۔
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Client: Hello, good morning.
+Agent: صبح بخیر! [بینک کا نام] میں خوش آمدید۔ آج آپ کی کس طرح مدد کر سکتا ہوں؟
+
+Client: I'm interested in opening a new bank account.
+Agent: عظیم! ہم مختلف ضروریات کے لیے مختلف اکاؤنٹس فراہم کرتے ہیں۔ کیا آپ چیکنگ اکاؤنٹ، بچت اکاؤنٹ، یا شاید دونوں چاہیں گے؟
+
+Client: I think I might need both. I use a debit card for most things, but I'd also like to start saving some money.
+Agent: عظیم! آپ کی روزانہ کے اخراجات کے لیے، ہمارا ایڈوانٹج چیکنگ چیکنگ لکھائی، موبائل بینکنگ، اور مفت ڈیبٹ کارڈ فراہم کرتا ہے۔ ہمارے پاس ایک ہائی یلڈ بچت اکاؤنٹ بھی ہے جو آپ کی جمعیت پر فائدہ دینے والے ہوتے ہیں۔
+
+Client: That sounds good. What are the minimum balances for each account?
+Agent: ایڈوانٹیج چیکنگ کے لیے ماہانہ فیس سے بچنے کے لیے ماضیلی مقدار 250 ڈالر ہے۔ ہائی یلڈ بچت کا ابتدائی جمع کرانے کا ضابطہ 500 ڈالر ہے۔
+
+Client: Okay, that's manageable. Is there anything else I need to bring to open these accounts?
+Agent: ایکاونٹ کھولنے کے لئے آپ کو دو معتبر شناختی کارڈز کی ضرورت ہوگی، جیسے آپ کی ڈرائیور کی لائسنس اور سوشل سکیورٹی کارڈ۔
+
+Client: I have those with me.
+Agent: مکمل۔ پھر چلیں آپ کا آغاز کریں۔ کیا آپ کو پیپر یا ڈیجیٹل اظہارات کا کوئی فرق ہے؟
+
+Client: I'd prefer digital statements to save on paper.
+Agent: نوٹ کیا گیا۔ اب آپ کی اکاؤنٹ کی حفاظت کو یقینی بنانے کے لئے، کیا آپ اپنے ڈیبٹ کارڈ اور آن لائن بینکنگ کے دسترس کے لئے پن ترتیب دینا چاہیں گے؟
+
+Client: ہاں، براہ کرم۔
+Agent: (سارہ کو درخواستی عمل کی راہنمائی کرتا ہے اور پن ترتیب دینا شروع کرتا ہے)
+
+Client: سب ہو گیا؟
+Agent: ہوگیا! یہاں آپ کے نئے اکاؤنٹ کے دستاویزات اور ڈیبٹ کارڈ ہیں۔
+
+Client: شکریہ
+Agent: خواہش مند ہیں، سارہ۔ میں آپ کی مدد کرنے کے لئے خوش ہوں۔ اگر آپ کو کچھ بھی ضرورت ہو تو براہ کرم بتائیں۔ اچھا دن گزاریں۔
+
+Client: آپ بھی۔
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+************************************************ POSITIVE *************************************************************************
+Farhan: Hello! Good Morning!
+Hassan: Good Morning! Welcome to Habibi Bank, how can I help you today?
+
+
+Hassan: Excellent! We offer a variety of accounts to suit different needs. Would you like a checking account, a savings account, or perhaps both?
+Farhan: I think I might need both. I use a debit card for most things, but I'd also like to start saving some money.
+
+
+Hassan: Perfect. Then let's get you started. Do you have your identity number so that I can proceed to open your account?
+Farhan: Yes, I have my identity number.
+
+
+Hassan: All done! Here is your new account credentials and you will receive your debit card within two days. There are some additional 	resources on online banking and mobile banking features if you'd like to take a look.
+
+
+Farhan: Nahi, Mujhe bs filhal yehi chaiye tha.
+Hassan: Chalein thik hai! Mai aap ki madad krne ke liye khush hu or agr aapko mustaqbil mai kuch bhi chaiye ho toh mai aapki khidmat mai hu. Shukriya!
+
+/////////////////////////////////////////////////////////////////////////////////////
+************************************************ NEGATIVE *************************************************************************
+Farhan: Hello! Good Morning!
+Hassan: Good Morning! Welcome to Habibi Bank, how can I help you today?
+
+Farhan: I want an account in your bank.
+Hassan: Excellent! We offer a variety of accounts to suit different needs. Would you like a checking account, a savings account, or perhaps both?
+
+Farhan: I think I might need both. I use a debit card for most things, but I'd also like to start saving some money.
+Hassan: Perfect. Then let's get you started. Do you have your identity number so that I can proceed to open your account?
+
+Hassan: Before proceeding to open your account I want to give you an offer which requires less charges as compare to the bank.
+Farhan: I don't understand, what are you talking about?
+
+Farhan: Yes, I have my identity number.
+Hassan: Okay! Here are your new account credentials, and you will receive your debit card within two days.
+
+Farhan: Nahi, Mujhe bs filhal yehi chaiye tha.
+Hassan: Chalein thik hai! Mai aap ki madad krne ke liye khush hu or agr aapko mustaqbil mai kuch bhi chaiye ho toh mai aapki khidmat mai hu. Shukriya!
+
+
+
+
+

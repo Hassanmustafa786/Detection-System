@@ -1,0 +1,27 @@
+About Page Content:
+
+Welcome to FairTalk AI, the current solution for detecting integrity in bank agent interactions. At FairTalk AI, we are dedicated to revolutionizing the banking industry by ensuring trust and transparency in every customer-agent interaction. We've developed a latest AI-powered app designed to empower you by analyzing conversations between bank agents and customers.
+
+But we don't stop there. Our sophisticated algorithm then meticulously examines the transcribed conversations to determine whether the bank agent is genuinely assisting the customer or engaging in fraudulent activities. Our goal is to identify instances where agents may be misleading or taking advantage of clients for personal gain.
+
+With FairTalk AI, financial institutions can ensure that their agents uphold the highest standards of honesty and professionalism. By promoting integrity within the banking sector, we contribute to building stronger relationships between customers and banks, fostering trust, and enhancing overall customer satisfaction.
+
+Our Technology:
+
+Multilingual Power: Our FairTalk AI, understands conversations across multiple languages, ensuring accessibility for all users.
+Precision Transcription: We utilize advanced Speech-to-Text technology to accurately capture every word spoken, ensuring a clear picture of the conversation.
+Speaker Diarization: We separate the agent's voice from the customer's, allowing for a deeper understanding of each party's intentions.
+AI-Driven Analysis: Our sophisticated AI algorithms analyze the conversation content, tone, and communication patterns to identify potential red flags that might indicate misleading information or fraudulent intent.
+
+Our Mission:
+Join us in our mission to uphold integrity and transparency in banking. Together, we can create a financial environment where honesty and trust are paramount. We aim to create a safer financial landscape for everyone. By providing insights into the nature of your bank interactions, FairTalk AI empowers you to:
+
+Make informed decisions: Gain confidence knowing you're getting accurate information and fair treatment.
+Identify potential scams: Our AI helps you recognize manipulative tactics and protects you from financial exploitation.
+Communicate effectively: Feel equipped to navigate conversations with bank agents confidently.
+
+Our Commitment:
+We are committed to ethical AI development and user privacy. We utilize secure data practices and ensure all your uploaded audio files remain confidential.
+
+
+Thank you for choosing FairTalk AI.
